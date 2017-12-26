@@ -28,6 +28,8 @@ The Visual C++ Win32 Application Wizard allows you to create any of four types o
 |**ATL support**|Yes|No|No|No|  
 |**MFC support**|Yes|No|No|Yes|  
   
+The Win32 Application Wizard can be found in Visual Studio using the "File" | "New" | "Project..." menu items then for Visual C++ Windows Desktop templates you will see "Windows Desktop Wizard". When you click "OK" you will get a "Windows Desktop Project" window.
+  
 ## Overview  
  This wizard page describes the current project settings for the Win32 application you are creating. By default, the following options are set:  
   
@@ -35,14 +37,12 @@ The Visual C++ Win32 Application Wizard allows you to create any of four types o
   
 -   The project is not empty.  
   
--   The project contains no export symbols.  
+-   The project contains no export symbols (this option is available for dynamic link library projects only).  
   
--   The project does not use a precompiled header file (this option is available for static library projects only).  
+-   The project uses a precompiled header file.  
   
--   The project includes support for neither MFC nor ATL.  
-  
- To change these defaults, click the [Application Settings](../windows/application-settings-win-32-project-wizard.md) tab in the left column of the wizard and make the desired changes.  
-  
+-   The project includes support for neither MFC nor ATL (MFC is not available for Windows applications and ATL is not available for static link library projects).  
+    
  Once you have created a Windows desktop application, you can add generic C++ classes using the [Generic](../ide/generic-cpp-class-wizard.md) Code Wizard. You can add other items, such as HTML files, header files, resources, or text files.  
   
 > [!NOTE]
